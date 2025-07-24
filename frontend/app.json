@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Delivery Tracking",
+    "slug": "delivery-tracking-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF3DC"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.deliverytracking.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF3DC"
+      },
+      "package": "com.deliverytracking.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to track deliveries."
+        }
+      ]
+    ],
+    "extra": {
+      "supabaseUrl": "https://oahnrywyhuhjncibeuq.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9haG5yZXd5aHVoam5jaWJldWlxIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDY3MTgyNCwiZXhwIjoyMDY2MjQ3ODI0fQ.WzMTygdy6w_h0ZtTW0ycnGGqmqFYMHH1X8sJnLSp4Wc",
+      "apiUrl": "http://localhost:3001/api"
+    }
+  }
+}
